@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -40,22 +40,16 @@ red_turtle = rg.SimpleTurtle('turtle')
 red_turtle.pen = rg.Pen('red',3)
 red_turtle.speed = 10
 
-size = 300
-
 for k in range(8):
-    blue_turtle.draw_regular_polygon(3,size)
+    blue_turtle.draw_regular_polygon(3,300)
     blue_turtle.pen_up()
     blue_turtle.right(45)
     blue_turtle.forward(50)
     blue_turtle.right(90)
     blue_turtle.pen_down()
-    for i in range(8):
-        red_turtle.draw_regular_polygon(3, 100)
-        red_turtle.pen_up()
-        red_turtle.right(45)
-        red_turtle.forward(50)
-        red_turtle.right(90)
-        red_turtle.pen_down()
+
+for i in range(8):
+    red_turtle.draw_regular_polygon(3,100)
     red_turtle.pen_up()
     red_turtle.right(45)
     red_turtle.forward(50)
